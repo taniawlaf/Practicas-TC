@@ -1,0 +1,12 @@
+<p>lista-clientes works!</p>
+
+<button routerLink="/home/crear-cliente">Crear cliente</button>
+
+<ul class="custom-ul">
+    <li *ngFor="let cliente of clientes" class="custom-li">
+        <strong>ID:</strong>{{cliente.id}}<br>
+        <strong>NOMBRE:</strong>{{cliente.nombre}}<br>
+        <strong>TELEFONO:</strong>{{cliente.numeroTelefono}}<br>
+        <strong>DIA DE CREACION:</strong>{{cliente.diaCreacion}}<br>
+    </li>
+</ul>

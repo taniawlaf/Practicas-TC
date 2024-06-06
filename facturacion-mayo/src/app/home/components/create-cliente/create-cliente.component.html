@@ -1,0 +1,16 @@
+<h2>Crear nevo cliente</h2>
+
+<form [formGroup]="clienteForm" (ngSubmit)="onSubmit()">
+    <label>Nombre:
+        <input type="text" formControlName="nombre">
+    </label>
+    <label>Numero de telefono:
+        <input type="text" formControlName="numeroTelefono">
+    </label>
+    <label>Dia de creacion:
+        <input type="date" formControlName="diaCreacion">
+    </label>
+    <br>
+    <button type="submit" [disabled]="clienteForm.invalid">Agregar cliente</button>
+    <button routerLink="/home">Cancelar</button>
+</form>
